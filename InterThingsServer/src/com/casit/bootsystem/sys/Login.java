@@ -78,6 +78,14 @@ public class Login
 	  JsonO userinfo=(JsonO)re.getSession().getAttribute("userinfo");
 	  JsonA menus=new JsonA();
 	  
+	  //用户为登录，返回告警信息	  
+	  if(userinfo==null){
+		  JsonO message=new JsonO();
+		  message.put("message", "用户未登录");
+		  menus.add(message);
+		  return menus;
+	  }
+	  
 	  String loginnm=userinfo.getString("loginnm");
 	  String passwd=userinfo.getString("password");
 	  
