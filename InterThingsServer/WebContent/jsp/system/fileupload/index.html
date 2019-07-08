@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>文件上传</title>
+</head>
+<body>
+
+ <form action="../../../MapRegion/up" enctype="multipart/form-data" method="post" target="targetIfr">
+                     <input type="file" name="file"/>
+                     
+
+<div style="display:none">
+ <input   id="quyu_name" placeholder="区域名称"   value="" name="quyu_name" >
+                      <input   placeholder="上级节点"  name="parents_id"  value=""  name="quyu_name" >
+                      <input   placeholder="地图名称"  name="mapserver_name"  value=""  name="quyu_name" >
+                      <input     aria-required="true"   value="" name="quyu_name" >
+                      <input  value=""  name="zhuangtai" >
+                      <input   value="" name="coordinates" >
+                      <input   value="" name="file_name"  >
+                      
+</div>
+                     
+                     <input type="submit" value="提交">
+ </form>
+ <iframe name="targetIfr" ></iframe>  
+ 
+ 
+ 
+</body>
+</html>
